@@ -26,7 +26,7 @@ export async function getVisibleElementByIsVisible(page, selector) {
   const browser = await launch({ headless: false });
   const page = await browser.newPage();
 
-  await page.goto('http://localhost:3000');
+  await page.goto('https://puppeteer-boundingbox-isvisible.vercel.app/');
 
   const elementWithBoundingBox = await getVisibleElementByBoundingBox(
     page,
